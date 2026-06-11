@@ -1,6 +1,6 @@
 # Design Judgment, Installed
 
-Nine Claude skills that encode the judgment-heavy parts of my design practice. Critique, curation, voice, storytelling, self-review: the tools I build with hold the same bar I do.
+Ten Claude skills that encode the judgment-heavy parts of my design practice. Critique, curation, voice, storytelling, self-review: the tools I build with hold the same bar I do.
 
 ## Why this exists
 
@@ -8,7 +8,7 @@ AI tools lowered the execution floor. Anyone can ship a clean, functional site n
 
 So instead of using Claude to execute faster, I encoded the judgment half. Each skill in this repo is a piece of how I actually work. My critique standards, my editing instincts, my writing voice, my definition of ready to ship, written down precisely enough that an agent can apply them. The skills are opinionated on purpose. That's the point.
 
-I'm a product designer ([portfolio](https://tori-rice.vercel.app)), and I built these while building my portfolio with Claude Code. I didn't plan a skill suite; I kept noticing pieces of my practice that could be encoded, and nine skills later it runs as a system. The repo is both the tooling and the case study.
+I'm a product designer ([portfolio](https://tori-rice.vercel.app)), and I built these while building my portfolio with Claude Code. I didn't plan a skill suite; I kept noticing pieces of my practice that could be encoded, and ten skills later it runs as a system. The repo is both the tooling and the case study.
 
 ## The skills
 
@@ -23,6 +23,7 @@ I'm a product designer ([portfolio](https://tori-rice.vercel.app)), and I built 
 | [portfolio-edit-pass](./portfolio-edit-pass) | What to cut. A screen-by-screen editor with a deliberate bias toward cutting, because you can't see the bloat from inside your own work. |
 | [portfolio-critique](./portfolio-critique) | What a reviewer actually sees. A seven-pass critic with a 90-second hiring-manager skim, a confidentiality audit, and a rubric-based ship verdict. |
 | [site-preflight](./site-preflight) | What ready to share means mechanically. Every link, the Slack unfurl preview, image weights, placeholder text. Function only, no opinions. |
+| [handoff-spec](./handoff-spec) | What prototypes hide. Enumerates the states the happy path skips (empty, error, permission, truncation, concurrency) and proposes a default for each. |
 
 ## How they chain
 
@@ -36,7 +37,7 @@ under all prose:        voice + writing-guardrails
 under all visuals:      visual-storytelling
 ```
 
-The journal captures raw material during builds. The writer turns it into a draft, the editor cuts, the critic grades and renders a ship verdict, and preflight makes sure nothing embarrassing happens when the link gets shared. Voice and the guardrails sit under everything that produces prose; visual storytelling sits under everything that produces diagrams.
+The journal captures raw material during builds. The writer turns it into a draft, the editor cuts, the critic grades and renders a ship verdict, and preflight makes sure nothing embarrassing happens when the link gets shared. Voice and the guardrails sit under everything that produces prose; visual storytelling sits under everything that produces diagrams. Handoff-spec runs when a prototype goes to engineering, enumerating the states the happy path skips.
 
 The two skills that matter most are the ones that compound. The journal means every project documents itself into future case-study material. The retro means every session makes the next one better.
 
