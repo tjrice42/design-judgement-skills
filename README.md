@@ -46,8 +46,8 @@ The two skills that matter most are the ones that compound. The journal means ev
 **Claude Code:** clone and symlink into your skills directory.
 
 ```bash
-git clone https://github.com/tjrice42/design-judgement-skills.git
-cd design-judgement-skills
+git clone https://github.com/tjrice42/design-judgment-skills.git
+cd design-judgment-skills
 mkdir -p ~/.claude/skills
 for d in */; do ln -s "$(pwd)/$d" ~/.claude/skills/"${d%/}"; done
 ```
